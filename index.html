@@ -24,13 +24,114 @@
       --font-wight-600: 600;
       --font-wight-700: 700;
     }
+
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body{
       font-size: 14px;
       font-family: 'Figtree', sans-serif;
+      background-color: var(--grey-900);
     }
+
+    .container{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: 350px;
+      height: 600px;
+      background-color: var(--grey-800);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: var(--white);
+    }
+
+    .bio
+    {
+      margin-top: 1rem;
+      font-weight: var(--font-wight-400);
+      color: var(--grey-700);
+    }
+
+    .card-item{
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .card-text-location
+    {
+      color: var(--green);
+      font-weight: var(--font-wight-400);
+      margin-top: 0.5rem;
+    }
+
+    .card-text-bio-description{
+      margin-top: 1rem;
+      font-weight: var(--font-wight-400);
+    }
+
+    .card img
+    {
+      display: inline-block;
+      border-radius: 50%;
+      width: 5rem;
+    }
+    .cad-links
+    {
+      background-color: var(--grey-700);
+      display: flex;
+      flex-direction: column;
+      font-weight: var(--font-wight-600);
+    }
+
+    .card-links div
+    {
+      text-align: center;
+      padding: 0.7rem;
+      margin-top: 1rem;
+      background-color: var(--grey-700);
+      cursor: pointer;
+    }
+
+    .card-links div:hover
+    {
+      background-color: var(--green);
+      color: var(--grey-900);
+    }
+
+
   </style>
 </head>
 <body>
+
+  <div class="container">
+    <div class="card">
+       <div class="card-item">
+        <img src="assets\images\avatar-jessica.jpeg" alt="Jessica Randall">
+        <h2>Jessica Randall</h2>
+        <p class="card-text-location">London, United kingdom</p>
+        <p class="card-text-bio-description">"Front-end developer and avid reader."</p>
+
+        <div class="card-links">
+          <div class="card-link">GitHub</div>
+          <div class="card-link">Frontend Mentor</div>
+          <div class="card-link">LinkedIn</div>
+          <div class="card-link">Twitter</div>
+          <div class="card-link">Instagram</div>
+        </div>
+
+       </div>
+    </div>
+  </div>
 
   <!-- Jessica Randall
   London, United Kingdom
